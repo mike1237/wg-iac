@@ -1,0 +1,7 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+
+runcmd:
+ - [ ls, -l, / ]
+ - [ sh, -xc, "echo $(date) ': hello world!'" ]
